@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Constructor Template</title>
+  </head>
+  <body id="body">
+    <p id="p"></p>
+    <p id="p2"></p>
+    <script>
+      function Person(name, age, occupation) {
+        this.name = name;
+        this.age = age;
+        this.occupation = occupation;
+        this.checkJob = function() {
+          return this.occupation;
+        };
+      }
+      var Jimmy = new Person("Jimmy", 28, "mechanic");
+
+      var Farrah = new Person("Farrah", 31, "teacher");
+
+      document.getElementById("p2").innerHTML =
+        Farrah.name +
+        " is a " +
+        Farrah.occupation +
+        ". " +
+        Farrah.name +
+        " is " +
+        Farrah.age +
+        ".";
+
+      document.getElementById(
+        "p"
+      ).innerHTML = `${Jimmy.name} is a ${Jimmy.occupation}. ${Jimmy.name} is ${Jimmy.age}.`;
+    </script>
+  </body>
+</html>
