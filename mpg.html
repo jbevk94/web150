@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MPG</title>
+  </head>
+  <body>
+    <h1 id="h1"></h1>
+    <p id="para"></p>
+    <script>
+      document.getElementById("h1").innerHTML =
+        "The Miles Per Gallon Application";
+
+      //declaring variables
+      let miles = Number(prompt("Enter miles driven"));
+      let gals = Number(prompt("Enter gallons of gas used"));
+
+      //calculation
+      let division = parseInt(miles / gals);
+
+      document.write(
+        "Miles driven = " +
+          miles +
+          "<br>" +
+          "Gallons of gas = " +
+          gals +
+          "<br>" +
+          "<br>" +
+          "Miles per gallon = " +
+          division +
+          "<br>" +
+          "<br>"
+      );
+
+      document.write("Thanks for using our MPG application.");
+    </script>
+  </body>
+</html>
