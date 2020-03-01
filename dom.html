@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM methods</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="one">About</li>
+        <li id="two">History</li>
+        <li id="three">Gallery</li>
+      </ul>
+    </nav>
+    <h1 id="header">Business</h1>
+    <p id="pOne">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsum neque, laboriosam ratione dolorum corporis temporibus perspiciatis dolore, eos labore animi quae, possimus blanditiis cumque! Provident doloremque odit reiciendis nisi?
+    </p>
+
+    <p id='pTwo'>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+      voluptates eligendi, porro repellat ipsa architecto incidunt consequuntur,
+      neque quibusdam ratione nihil dignissimos asperiores, nobis ipsum
+      molestias aliquid nam dolores odit?
+    </p>
+    <p id = 'pThree'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quasi quis, deleniti similique possimus officia explicabo natus suscipit qui, quibusdam quos ab impedit hic laboriosam odit nemo beatae rem voluptate!</p>
+
+    <ol>
+      <li>Register for class</li>
+      <li>Review Syllabus</li>
+      <li>Show up</li>
+    </ol>
+
+    <script>
+      // Change nav link titles
+      let navTitle = document.getElementById("one");
+      let navContent = navTitle.innerHTML;
+      navTitle.innerHTML = "<li> About Our Team</li>";
+
+      let navTitle2 = document.getElementById("two");
+      let navContent2 = navTitle2.innerHTML;
+      navTitle2.innerHTML = "<li> Learn Our History</li>";
+
+      let newheader = document.getElementById("header");
+      let headerContent = newheader.innerHTML;
+      newheader.innerHTML = "<h1> School of Code</h1>";
+        //Add bullet to ordered list
+      let addLink = document.createElement("li");
+      let newLink = document.createTextNode("Do the work");
+      addLink.appendChild(newLink);
+      let position = document.getElementsByTagName("ol")[0];
+      position.appendChild(addLink);
+
+
+      //Remove element from dom tree
+
+      let removePara = document.getElementsByTagName('p')[2];
+      let container = removePara.parentNode;
+      container.removeChild(removePara)
+
+      //Accessing & Changing a Text Node
+
+      let changePara = document.getElementById('pOne');
+      let content = changePara.firstChild.nodeValue;
+      content = content.replace('Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsum neque, laboriosam ratione dolorum corporis temporibus perspiciatis dolore, eos labore animi quae, possimus blanditiis cumque! Provident doloremque odit reiciendis nisi?',' There are three ways people generally learn to code. They attend college, go to a bootcamp, or teach themselves. Everyone learns different and it is important to discover which way is best for you as you begin your coding career.');
+        changePara.firstChild.nodeValue = content;
+    </script>
+  </body>
+</html>
