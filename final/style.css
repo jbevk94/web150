@@ -1,29 +1,128 @@
-/* home page starts */
+/* Desktops and laptops ----------- */
+@media all and (min-width: 1280px) {
+  /* home page starts */
 
+  /* home page ends */
 
+  /* product page starts */
+  .cards {
+    display: flex;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 
-/* home page ends */
+  .flip-card:hover .inner {
+    transform: rotateY(180deg);
+  }
 
-/* product page starts */
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 
+  .front {
+    background-color: #bbb;
+    color: black;
+  }
 
+  .back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
+  /* product page ends */
 
+  /* about page starts */
 
+  /* about page ends */
 
-/* product page ends */
+  /* contact page starts */
 
-/* about page starts */
+  /* contact page ends */
+}
 
+/************   TABLET  *********** */
+@media all and (min-width: 737px) and (max-width: 1399px) {
+  /* Product Page Starts */
+  .cards {
+    display: flex;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: auto;
+    perspective: 1000px;
+    padding: 20px 20px 5px 30px;
+  }
 
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 
+  .flip-card:hover .inner {
+    transform: rotateY(180deg);
+  }
 
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 
-/* about page ends */
+  .front {
+    background-color: #bbb;
+    color: black;
+  }
 
-/* contact page starts */
+  .back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
+  /* Product Page Ends */
+}
 
+/* PHONE */
+@media all and (max-width: 736px) {
+   
 
-/* contact page ends */
+}
