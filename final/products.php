@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- jQuery DOM Manipulation -->
-    <script type="text/javascript">
-      $("document").ready(function() {
-        var direct = $("<span>");
-        direct.append("<span>Hover over image for more details.</span>");
-
-        $(".directions").html(direct);
-      });
-    </script>
-  </head>
-  <body>
-  <div class="nav">
-      
-      <a href="contact.php">Contact Us</a>
-      <a href="about.php">About</a>
-      <a href="products.php">Menu</a>
-      <a href="index.php">Home</a>
-     
-    </div>
+<?php include "includes/header.php"?>
     <img src="images/menu.PNG" class="menuImg" alt="Menu Banner">
     <h1 class="headerP">100% Plant-Based <br>Dairy free</h1>
     <h3 class="sub">
@@ -236,4 +209,13 @@
       </div>
     </div>
   </div>
+  <!-- jQuery DOM Manipulation -->
+  <script type="text/javascript">
+      $("document").ready(function() {
+        var direct = $("<span>");
+        direct.append("<span>Hover over image for more details.</span>");
+
+        $(".directions").html(direct);
+      });
+    </script>
   <?php include "includes/footer.php"?>

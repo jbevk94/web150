@@ -15,7 +15,7 @@
     Lower Your Carbon Footprint! According to researchers at the University of Oxford, eating a vegan diet could be the single biggest way to reduce your environmental impact on earth. Cutting meat and dairy products from your diet could reduce an individual's carbon footprint from food by up to 73 per cent.
 ​</p>
 <br>
-<!-- Image slider -->
+<!-- Add Image slider -->
 <p>The typical America diet is unhealthy, wasteful and cruel. Over-processed and meat-centric, the way we eat is an environmental and public health catastrophe. In addition, it inflicts needless pain and grief on farmed animals, individuals entitled to some sunshine, joy and affection during their brief time on earth. Something Better serves a 100% cruelty-free plant-based menu.</p>
 </div>
  

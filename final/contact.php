@@ -1,11 +1,16 @@
 <?php include "includes/header.php"?>
     <div class="container">
       <form action="">
+        <h1>Something Better</h1>
         <label for="fname">First Name</label>
         <input type="text" name="firstname" placeholder="First name" />
 <br>
         <label for="lname"> Last  Name </label>
         <input type="text" name="lastname" placeholder="Last name" />
+        <br>
+        <label for="contact" class="contact">Phone Number</label>
+        <input type="text" name="contact" placeholder="Contact Info" />
+
         <br>
         <label for="topic">What does this involve?</label>
         
@@ -22,4 +27,15 @@
     <input type="submit" value="Submit">
       </form>
     </div>
+    <!-- Used jQuery to change label -->
+    <script>
+      $("document").ready(function(){
+        let contactInfo = $('<label>');
+        $(".contact").html("<label>Contact Info</label>");
+
+        $("h1").css("color","white");
+        $("h1").css("font-size","72px");
+      });
+    
+    </script>
     <?php include "includes/footer.php"?>
