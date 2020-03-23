@@ -1,71 +1,69 @@
-html{
-    background-color: #8fc1e3;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    letter-spacing: 1.5px;
+html {
+  background-color: #8fc1e3;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  letter-spacing: 1.5px;
 }
-
-/* Desktops and laptops ----------- */
-@media all and (min-width: 1280px) {
   /* Navigation Starts*/
 
- 
-  .nav{
-        overflow: hidden;
-        background-color: #31708e;
-        margin: -7.8px;  
-      }
-      
-      .nav a {
-        float: right;
-        background-color: #6b9960;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 24px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-.nav a:hover {
-  background-color: #ddd;
-  color: black;
-  
-}
+  .nav {
+    overflow: hidden;
+    background-color: #31708e;
+    margin: -7.8px;
+  }
 
-.nav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-/* Navigation Ends */
+  .nav a {
+    float: right;
+    background-color: #6b9960;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-/* home page starts */
-  .inside{
+  .nav a.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  /* Navigation Ends */
+/* Desktops and laptops ----------- */
+@media all and (min-width: 1280px) {
+
+
+  /* home page starts */
+  .inside {
     width: 50%;
     height: auto;
     padding: 121px;
   }
 
-  .title{
+  .title {
     color: white;
-   font-size: 62px;
-   padding: 140px 90px 130px 0px;
+    font-size: 62px;
+    padding: 140px 90px 130px 0px;
     float: right;
     letter-spacing: 2.5px;
   }
-.text{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 30px;
-  background-color: #6b9960;
-  font-size: 26px;
-  color: white;
-}
+  .text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #6b9960;
+    font-size: 26px;
+    color: white;
+  }
   /* home page ends */
 
   /* product page starts */
-  .headerP{
+  .headerP {
     text-align: right;
     font-size: 72px;
     color: #f7f9f8;
@@ -79,18 +77,17 @@ html{
   /* .productBG{
     background-color: pink;
   } */
-  
-.sub{
-  color: #f7f9f8;
-  text-align: left;
-  font-size: 32px;
-  font-weight: normal;
-  padding: 100px 30px;
-  width: 86%;
-  display: grid;
-  
-}
-  .menu{
+
+  .sub {
+    color: #f7f9f8;
+    text-align: left;
+    font-size: 32px;
+    font-weight: normal;
+    padding: 100px 30px;
+    width: 86%;
+    display: grid;
+  }
+  .menu {
     color: #f7f9f8;
     background-color: #14641a;
     font-size: 42px;
@@ -102,29 +99,25 @@ html{
     margin-right: auto;
     border-radius: 25px;
     padding: 10px;
-  
   }
-.menuImg{
-  width: 101.5%;
-  height: auto;
-  padding:0px;
-  margin: -10px;
- 
-}
+  .menuImg {
+    width: 101.5%;
+    height: auto;
+    padding: 0px;
+    margin: -10px;
+  }
 
   .cards {
     display: flex;
     width: 100%;
     height: auto;
     padding-bottom: 40px;
-    
   }
   .card-img {
     width: 400px;
     height: 400px;
   }
   .flip-card {
-   
     width: 400px;
     height: 400px;
     perspective: 1000px;
@@ -163,68 +156,93 @@ html{
     padding: 5px;
   }
 
-  .descript{
-    padding:10px;
+  .descript {
+    padding: 10px;
   }
 
   /* product page ends */
 
   /* about page starts */
-  .header{
+  .header {
     text-align: center;
     font-size: 72px;
-    color: #f7f9f8;
-   
   }
-    .intro{
-      float: left;
-      width: 35%;
-      padding: 10px;
-    }
-  
-    .intro2{
-      float:right;
-      font-size: 25px;
-      width: 34%;
-    }
-  
-    .intro, .intro2{
-      letter-spacing: 3px;
-      display:grid;
-      font-size: 22px;
-      padding: 14px
-    }
-  .introImg{
+
+  .intro {
+    width: 30%;
+    margin-left: 15px;
+    float: left;
+  }
+  .intro-accord {
+    width: 50%;
+    margin-left: 15px;
+  }
+
+  .accordian-header {
+    width: 10%;
+
+    opacity: 0.8;
+    font-weight: bolder;
+    padding-left: 20px;
+    margin-left: 5px;
+  }
+  .intro2 {
+    float: right;
+    font-size: 25px;
+    width: 34%;
+  }
+
+  .intro2 {
+    letter-spacing: 3px;
+    display: grid;
+    font-size: 22px;
+    padding: 14px;
+  }
+  .introImg {
     width: 860px;
-      height: auto;
-      float: right;
-      padding: 20px 0px 24px 30px;
-      margin-right: -17px;
+    height: auto;
+    float: right;
+    padding: 20px 0px 24px 30px;
+    margin-right: -17px;
   }
-  
-  .introImg2{
+
+  .introImg2 {
     width: 850px;
     margin-left: -11px;
     margin-bottom: -6px;
     padding-bottom: 25px;
   }
-  
-  .introImg3{
+
+  .introImg3 {
     float: right;
     width: 880px;
     margin-right: -10px;
+    padding-bottom: 250px;
   }
+
+  #accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    padding-top: 245px;
+  }
+
   /* about page ends */
 
   /* contact page starts */
 
-  .container{
+  .container {
     float: left;
     width: 30%;
     padding-top: 100px;
   }
 
-  .info{
+  .info {
     float: right;
     width: 45%;
   }
@@ -232,14 +250,13 @@ html{
   /* contact page ends */
 
   /* footer starts */
-  footer{
+  footer {
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
     overflow: hidden;
   }
-
 
   footer p {
     padding: 2em;
@@ -288,7 +305,6 @@ html{
     backface-visibility: hidden;
   }
 
-
   .back {
     background-color: #2980b9;
     color: white;
@@ -300,6 +316,4 @@ html{
 
 /* PHONE */
 @media all and (max-width: 736px) {
-   
-
 }
